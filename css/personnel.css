@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu {
+  background-color: #6941c6;
+  background-image: image("../product_image/pexels-paula-128639.jpg");
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  width: 8.125em;
+  height: 8.125em;
+}
+
+.menu-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: end;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+.menu-a a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.image_bois img {
+  width: 100%;
+}
+
+.accuiell_contacte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Accueil {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+}
+
+/* card */ 
+
+.collaboration-section {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.collaboration-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.collaboration-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artist-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.artist-name {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.artist-description {
+  color: #777;
+  text-align: justify;
+}
+
+.artistPhoto {
+  width: 300px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #6941c6;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.impressum a {
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .menu-a {
+    padding-top: 2%;
+    top: 0;
+    position: absolute;
+    height: 55h;
+    background-color: #6941c6;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .collaboration-item {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .image_bois img {
+    padding-top: 25%;
+  }
+
+  .Accueil {
+    padding-top: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 5px;
+  }
+
+  .artist-description {
+    font-size: 10px;
+  }
+}

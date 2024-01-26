@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu {
+  background-color: #6941c6;
+  background-image: image("../product_image/pexels-paula-128639.jpg");
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  width: 8.125em;
+  height: 8.125em;
+}
+
+.menu-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: end;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+.menu-a a {
+  display: grid;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.image_bois img {
+  width: 100%;
+}
+
+.accuiell_contacte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Accueil {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+}
+
+/*-------------------------------------------------------*/
+
+.container {
+  background-color: #fff;
+  border-color: #6941c6;
+  padding: 5% 30%;
+  border-radius: 2%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 1.5em;
+  margin-top: 1%;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #6941c6;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #6941c6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #6941c6;
+}
+
+.footer {
+  text-align: center;
+  background-color: #6941c6;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.impressum a {
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .menu-a {
+    flex-direction: column;
+    position: absolute;
+    background-color: #6941C6;
+    width: 100%;
+    padding-top: 2%;
+    top: 0;
+    height: 55h;
+  }
+
+  .accuiell_contacte {
+    padding-top: 35%;
+  }
+
+  .container {
+    padding: 2% 15%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 10px;
+  }
+
+  .container {
+    padding: 2% 30%;
+  }
+
+  .accuiell_contacte {
+    padding-top: 30%;
+  }
+}

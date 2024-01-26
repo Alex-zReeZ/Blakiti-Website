@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Menu {
+    background-color: #6941C6;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.logo {
+    width: 8.125em;
+    height: 8.125em;
+}
+
+.menu-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: end;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+}
+
+.menu-a a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+
+/*-------------------------------------------------------*/
+
+.image_bois_Produit {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 1em;
+}
+
+.image_bois {
+    width: 100%;
+    height: 40%;
+}
+
+.Produit{
+    position: absolute;
+    text-align: center;
+    font-size: 3em;
+}
+
+/*-----------------------------------------case de produit-----------------------*/
+
+.tout_les_produits {
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+    row-gap: 2%;
+}
+
+.case_produit {
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px black solid;
+    flex-direction: column;
+    display: flex;
+}
+
+.position_case {
+    align-self: center;
+    background: #FFFFFF;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.texte_case {
+    align-self: stretch;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    word-wrap: break-word;
+    background-color: #E2E2E2;
+}
+
+.image_case {
+    border-radius: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.page_produits {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.page_produits a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer {
+    text-align: center;
+    background-color: #6941c6;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.impressum a {
+    color: white;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .tout_les_produits {
+        display: grid;
+        margin: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        row-gap: 1%;
+        padding-bottom: 20%;
+    }
+
+    .logo {
+        padding-bottom: 2%;
+    }
+
+    .menu-a {
+        padding-top: 2%;
+        top: 0;
+        position: absolute;
+        height: 55h;
+        background-color: #6941C6;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Produit {
+        font-size: 3em;
+        padding-top: 5%;
+    }
+
+    .image_bois_Produit {
+        padding-top: 30%;
+    }
+
+    .image_bois {
+        width: 100%;
+        height: 70%;
+    }
+
+    .page_produits {
+        padding-top: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+    .tout_les_produits {
+        margin: 2% 20%;
+    }
+
+    .Produit {
+        font-size: 2em;
+    }
+
+    .image_bois_Produit {
+        padding-top: 20%;
+    }
+    
+    .texte_case {
+        font-size: 1em;
+    }
+    
+    .image_case {
+        width: 100px;
+    }
+
+    .page_produits {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .tout_les_produits {
+        padding-bottom: 22%;
+    }
+}
+

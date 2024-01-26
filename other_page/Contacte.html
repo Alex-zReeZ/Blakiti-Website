@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blatiki</title>
+  <link href="../css/Contact.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="Menu">
+    <div class="menu-a">
+      <a href="../index.html"> Blakiti </a>
+
+      <a href="../index.html" id="Accueil"> Accueil </a>
+
+      <a href="./Produits1.html" id="Produits1"> Produits </a>
+
+      <a href="./personnel.html">personnel</a>
+
+      <a href="./Contacte.html"> Contacte </a>
+
+      <a href="./page_pdf.html"> PDF </a>
+
+      <img class="logo" src="../pictures/cerf_de_face-removebg-preview.png" alt="logo">
+    </div>
+  </nav>
+  <div class="accuiell_contacte">
+    <picture class="image_bois">
+      <img src="../pictures/pexels-paula-128639.jpg" alt="mur en bûche">
+    </picture>
+
+    <h1 class="Accueil">Contact</h1>
+  </div>
+
+  <div class="container">
+    <form method="post" id="contactForm" class="contact-form">
+      <h2 class="form-title">Contactez nous</h2>
+      
+      <label for="name" class="form-label">Nom :</label>
+      <input type="text" id="name" name="name" class="form-input" required>
+  
+      <label for="email" class="form-label">Email :</label>
+      <input type="email" id="email" name="email" class="form-input" required>
+  
+      <label for="adresse" class="form-label">Adresse :</label>
+      <input type="text" id="adresse" name="adresse" class="form-input">
+  
+      <label for="telephone" class="form-label">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" class="form-input">
+  
+      <label for="password" class="form-label">Mot de passe :</label>
+      <input type="password" id="password" name="password" class="form-input" required>
+  
+      <label for="url" class="form-label">URL :</label>
+      <input type="url" id="url" name="url" class="form-input">
+  
+      <label for="date" class="form-label">Date :</label>
+      <input type="date" id="date" name="date" class="form-input">
+  
+      <label class="form-label">Choix multiple :</label>
+      <div class="form-checkbox">
+        <input type="checkbox" id="option1" name="option1">
+        <label for="option1">Options 1</label>
+        <input type="checkbox" id="option2" name="option2">
+        <label for="option2">Option 2</label>
+      </div>
+  
+      <label class="form-label">Choix unique :</label>
+      <div class="form-radio">
+        <input type="radio" id="radio1" name="radio" value="option1">
+        <label for="radio1">Ne pas recevoir de publicité</label>
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">Autoriser l'envoie de publicité</label>
+      </div>
+  
+      <label for="message" class="form-label">Message :</label>
+      <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+  
+      <button type="submit" class="form-button">Envoyer</button>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="copyright">
+      <p>&copy; 2023 Blatiki. Tous droits réservés.</p>
+    </div>
+    <div class="impressum">
+      <p>Impressum - Contact webmaster: <a href="mailto:webmaster@blatiki.com">webmaster@blatiki.com</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
